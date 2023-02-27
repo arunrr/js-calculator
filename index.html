@@ -8,42 +8,48 @@
     <title>Calculator</title>
   </head>
   <body>
-    <main class="container">
-      <div class="calculator-body">
-        <div class="calculator-display">123456</div>
-        <div class="calculator-numberpads">
+    <div class="container">
+      <main class="calculator">
+        <form>
+          <div class="calculator-display">
+            <input type="text" name="display" value="33" />
+          </div>
+
           <div class="row">
-            <button class="button">AC</button>
-            <button class="button">C</button>
-            <button class="button">%</button>
-            <button class="button">/</button>
+            <input type="button" value="AC" class="operator" />
+            <input type="button" value="C" class="operator" />
+            <input type="button" value="%" class="operator" />
+            <input type="button" value="/" class="operator" />
           </div>
           <div class="row">
-            <button class="button">7</button>
-            <button class="button">8</button>
-            <button class="button">9</button>
-            <button class="button">X</button>
+            <input type="button" value="7" />
+            <input type="button" value="8" />
+            <input type="button" value="9" />
+            <input type="button" value="X" class="operator" />
           </div>
           <div class="row">
-            <button class="button">4</button>
-            <button class="button">5</button>
-            <button class="button">6</button>
-            <button class="button">-</button>
+            <input type="button" value="4" />
+            <input type="button" value="5" />
+            <input type="button" value="6" />
+            <input type="button" value="-" class="operator" />
           </div>
           <div class="row">
-            <button class="button">1</button>
-            <button class="button">2</button>
-            <button class="button">3</button>
-            <button class="button">+</button>
+            <input type="button" value="1" />
+            <input type="button" value="2" />
+            <input type="button" value="3" />
+            <input type="button" value="+" class="operator" />
           </div>
           <div class="row">
-            <button class="button">0</button>
-            <button class="button">.</button>
-            <button class="button long-btn">=</button>
+            <input type="button" value="0" />
+            <input type="button" value="." />
+            <input type="button" value="=" class="equal operator" />
           </div>
-        </div>
-      </div>
-    </main>
+        </form>
+      </main>
+    </div>
+    <footer>
+      Developed by <a href="https://github.com/arunrr">Arun.R.R.</a>
+    </footer>
     <script src="./js/main.js"></script>
   </body>
 </html>

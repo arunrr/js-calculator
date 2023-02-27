@@ -4,84 +4,85 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
   font-family: "Orbitron", sans-serif;
 }
 
 .container {
-  max-width: 960px;
-  min-height: 100vh;
-  margin: 0 auto;
-}
-
-.calculator-body {
-  padding: 1rem;
-  margin: 0 auto;
-  margin-top: 5rem;
-  max-width: 70%;
-  min-height: 70vh;
-  border: 1px solid gray;
-}
-
-.calculator-display {
-  letter-spacing: 7px;
-  margin: 1.5rem 0;
-  min-width: 100%;
-  height: 100px;
-  border: 1px solid green;
-  text-align: right;
-  font-size: 4rem;
-  padding: 1rem;
-}
-
-.calculator-numberpads {
-  border: 1px solid violet;
-  min-width: 100%;
-  min-height: 65vh;
-  padding: 2rem;
-}
-
-.row {
+  background-color: #e3f9ff;
+  width: 100%;
+  height: 93vh;
   display: flex;
-  justify-content: space-around;
-  margin-bottom: 2.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator {
+  background-color: #3a4452;
+  padding: 2.5rem;
+  border-radius: 10px;
+  width: 30rem;
+}
+
+form .row {
+  display: flex;
   gap: 1rem;
 }
 
-.button {
-  letter-spacing: 5px;
-  font-family: inherit;
-  flex: 1;
-  border: 1px solid black;
-  border-radius: 1.5rem;
-  padding: 1.5rem;
-  font-size: 2rem;
+.calculator form input {
   font-weight: bold;
+  flex: 1;
+  margin-bottom: 2rem;
+  letter-spacing: 5px;
+  border: 0;
+  outline: 0;
+  width: 3.75rem;
+  height: 3.75rem;
+  color: #e3f9ff;
+  background-color: #4c596c;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
-.long-btn {
+.calculator form input:focus {
+  border: 1px solid #19d382;
+}
+
+form .calculator-display {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+form .calculator-display input {
+  flex: 1;
+  padding: 2rem 1rem;
+  box-shadow: none;
+  text-align: right;
+  font-size: 2.5rem;
+}
+
+form .row .operator {
+  color: #19d382;
+
+  border: none;
+}
+
+form .row .equal {
   flex: 2;
 }
 
-@media (max-width: 700px) {
-  .container {
-    min-width: 100%;
-  }
+footer {
+  color: #3a4452;
+  font-weight: bolder;
+  letter-spacing: 5px;
+  background-color: #3a4452;
+  text-align: center;
+  padding: 1.5rem;
+  color: #e3f9ff;
+}
 
-  .calculator-body {
-    max-width: 100%;
-  }
-
-  .calculator-numberpads {
-    padding: 0;
-  }
-
-  .row {
-  }
-
-  .button {
-    font-size: 1.5rem;
-  }
+footer a {
+  color: #19d382;
+  text-decoration: none;
 }
