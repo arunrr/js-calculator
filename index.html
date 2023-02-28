@@ -12,37 +12,52 @@
       <main class="calculator">
         <form>
           <div class="calculator-display">
-            <input type="text" name="display" value="33" />
+            <input type="text" name="display" value="0" id="display" readonly />
           </div>
 
           <div class="row">
-            <input type="button" value="AC" class="operator" />
-            <input type="button" value="C" class="operator" />
-            <input type="button" value="%" class="operator" />
-            <input type="button" value="/" class="operator" />
+            <input
+              type="button"
+              value="AC"
+              id="clear"
+              class="operation btn-highlight"
+            />
+            <input
+              type="button"
+              value="C"
+              id="delete"
+              class="operation btn-highlight"
+            />
+            <input type="button" value="%" id="operator" class="operation" />
+            <input type="button" value="/" id="operator" class="operation" />
           </div>
           <div class="row">
-            <input type="button" value="7" />
-            <input type="button" value="8" />
-            <input type="button" value="9" />
-            <input type="button" value="X" class="operator" />
+            <input type="button" value="7" id="number" />
+            <input type="button" value="8" id="number" />
+            <input type="button" value="9" id="number" />
+            <input type="button" value="x" id="operator" class="operation" />
           </div>
           <div class="row">
-            <input type="button" value="4" />
-            <input type="button" value="5" />
-            <input type="button" value="6" />
-            <input type="button" value="-" class="operator" />
+            <input type="button" value="4" id="number" />
+            <input type="button" value="5" id="number" />
+            <input type="button" value="6" id="number" />
+            <input type="button" value="-" id="operator" class="operation" />
           </div>
           <div class="row">
-            <input type="button" value="1" />
-            <input type="button" value="2" />
-            <input type="button" value="3" />
-            <input type="button" value="+" class="operator" />
+            <input type="button" value="1" id="number" />
+            <input type="button" value="2" id="number" />
+            <input type="button" value="3" id="number" />
+            <input type="button" value="+" id="operator" class="operation" />
           </div>
           <div class="row">
-            <input type="button" value="0" />
-            <input type="button" value="." />
-            <input type="button" value="=" class="equal operator" />
+            <input type="button" value="0" id="number" />
+            <input type="button" value="." id="dot" />
+            <input
+              type="button"
+              value="="
+              id="equal"
+              class="equal operation btn-highlight"
+            />
           </div>
         </form>
       </main>

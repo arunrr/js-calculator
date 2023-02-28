@@ -69,10 +69,15 @@ form .calculator-display input {
   font-size: 2.5rem;
 }
 
-form .row .operator {
+form .row .operation {
   color: var(--clr-accent);
 
   border: none;
+}
+
+form .row .btn-highlight {
+  background-color: var(--clr-accent);
+  color: var(--clr-medium);
 }
 
 form .row .equal {
